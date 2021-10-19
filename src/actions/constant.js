@@ -1,7 +1,12 @@
-export const API_URL = 'http://3.239.208.80:5000';
-export const IMAGE_URL = 'http://3.239.208.80:5000/static/';
-export const SUCCESS_URL = 'http://3.239.208.80:5000/paymentsuccess';
-export const FAILURE_URL = 'http://3.239.208.80:5000/paymentfailed';
+// export const API_URL = 'http://3.239.208.80:5000';
+// export const IMAGE_URL = 'http://3.239.208.80:5000/static/';
+// export const SUCCESS_URL = 'http://3.239.208.80:5000/paymentsuccess';
+// export const FAILURE_URL = 'http://3.239.208.80:5000/paymentfailed';
+
+export const API_URL = 'http://107.22.57.98:443';
+export const IMAGE_URL = 'http://107.22.57.98:443/static/';
+export const SUCCESS_URL = 'http://107.22.57.98:443/paymentsuccess';
+export const FAILURE_URL = 'http://107.22.57.98:443/paymentfailed';
 
 // export const API_URL = 'http://127.0.0.1:5000';
 // export const IMAGE_URL = 'http://127.0.0.1:5000/static/';
