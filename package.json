@@ -2,7 +2,7 @@
   "name": "OVERTONE",
   "version": "0.1.0",
   "private": true,
-    "engines": {
+  "engines": {
     "node": "16.11.1",
     "npm": "8.0.0"
   },
@@ -69,7 +69,7 @@
     "react-owl-carousel2": "^0.3.0",
     "react-paypal-express-checkout": "^1.0.5",
     "react-quantity-picker": "^1.0.3",
-    "react-redux": "^5.0.7",
+    "react-redux": "^7.2.5",
     "react-responsive-carousel": "^3.2.18",
     "react-responsive-modal": "^4.0.1",
     "react-router-dom": "^4.3.1",

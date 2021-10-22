@@ -18,6 +18,10 @@ import SupportPage from './components/layouts/SupportPage';
 import Acoustic101 from './components/layouts/Acoustic101';
 import Faq from './components/layouts/Faq';
 import WhyOvertone from './components/layouts/WhyOvertone';
+
+import TempCart from "./components/cart/TempCart";
+import Helper from "./components/cart/Helper";
+
 // import Register from './components/auth/Register';
 // import Forgot from './components/auth/Forgot';
 // import Account from './components/account/Account';
@@ -139,6 +143,7 @@ render() {
 
           
           <Switch>
+             <Route exact path='/cart/:id' component={TempCart} />
             <Route exact path="/cart" component={Cart}/> 
             {/* <Route exact path='/cart/:id' component={TempCart} /> */}
             <PrivateRoute exact path="/checkout" component={Checkout}/> 
