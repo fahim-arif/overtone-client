@@ -61,7 +61,7 @@ export default function TempCart({ match }) {
   localStorage.removeItem("cart");
   localStorage.setItem("cart", JSON.stringify(Data));
   //   window.location("/cart");
-  window.location.href = "https://overtoneclient.herokuapp.com/cart";
+  window.location.href = "http://localhost:3001/cart";
 
   prodIds = prodIds.slice(10);
   //   console.log(prodIds);
