@@ -80,7 +80,7 @@ class ProductDetail extends Component {
 
 
 
-          Axios.post(API_URL + `api/attributemapping/getattributebyproduct`, { productID: this.state.parsed.productID })
+        Axios.post(API_URL + `api/attributemapping/getattributebyproduct`, { productID: this.state.parsed.productID })
             .then(result => {
                 this.setState({
                     // attributeLoa: false,
@@ -248,14 +248,6 @@ class ProductDetail extends Component {
                     })}
                 </ul>
             }
-            // if (result.type === 'imageUpload') {
-            //     return <ul className="profile-g pointer" style={{ marginTop: 20 }}>
-            //         {result.list.map(attrres => {
-            //             var findSelected = this.state.selectedAttribute.find(x => x.value === attrres.value)
-            //             return <li className={findSelected ? "border" : null} onClick={() => this.onSelectList(attrres.label, attrres.value, attrres.additionalPrice, parentKey)}><span style={{ width: 25, height: 25, backgroundColor: attrres.value, borderColor: "#fff" }}></span><span>{attrres.label} {parseInt(attrres.additionalPrice) > 0 && `[+ $ ${attrres.additionalPrice} ]`}</span></li>
-            //         })}
-            //     </ul>
-            // }
             if (result.type === "color") {
                 return <ul className="profile-g pointer" style={{ marginTop: 20 }}>
                     {result.list.map(attrres => {
@@ -313,12 +305,6 @@ class ProductDetail extends Component {
                                 })}
                             </ul>)
                         }
-                        <h1>Hello world</h1>
-                        // if (result.type === 'imageUpload') {
-                        //     return <ul className="profile-g pointer" style={{ marginTop: 20 }}>
-                        //         <h1>Hello world</h1>
-                        //     </ul>
-                        // }
                         if (mappingType === "color") {
                             fields.push(<ul className="profile-g pointer">
                                 {value.sort(function (a, b) {
